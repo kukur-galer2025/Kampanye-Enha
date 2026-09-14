@@ -2,6 +2,7 @@
 import Script from "next/script";
 import { signOut } from "next-auth/react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Dashboard() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,8 +12,10 @@ export default function Dashboard() {
       <div className="app-shell">
   <aside className={`sidebar ${menuOpen ? 'open' : ''}`}>
     <div className="brand">
-      <div className="brand-mark">DC</div>
-      <div><strong>DEKAN</strong><span>Command Center</span></div>
+      <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none', color: 'inherit' }}>
+        <div className="brand-mark">DC</div>
+        <div><strong>DEKAN</strong><span>Command Center</span></div>
+      </Link>
       <button className="mobile-menu-close" onClick={() => setMenuOpen(false)}>×</button>
     </div>
     <nav className="nav">
