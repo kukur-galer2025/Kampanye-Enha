@@ -19,6 +19,9 @@ export default function Dashboard() {
       <button className="mobile-menu-close" onClick={() => setMenuOpen(false)}>×</button>
     </div>
     <nav className="nav">
+      <Link href="/" className="nav-item" style={{ textDecoration: 'none', borderBottom: '1px solid #1e3a31', marginBottom: '10px', paddingBottom: '15px' }}>
+        <span>🏠</span> Kembali ke Home
+      </Link>
       <button className="nav-item active" data-view="overview" onClick={() => setMenuOpen(false)}><span>◫</span> Executive Overview</button>
       <button className="nav-item" data-view="renstra" onClick={() => setMenuOpen(false)}><span>◎</span> Renstra & Kebijakan</button>
       <button className="nav-item" data-view="quality" onClick={() => setMenuOpen(false)}><span>◆</span> Mutu & Akreditasi</button>
