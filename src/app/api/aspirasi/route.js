@@ -65,7 +65,7 @@ async function sendEmailNotification(data) {
 
     const mailOptions = {
       from: `"Sistem Kampanye Dekan" <${SMTP_EMAIL}>`,
-      to: 'kingraditya2005@gmail.com',
+      to: 'nurul@unsoed.ac.id',
       subject: `Aspirasi Baru: ${data.category}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
