@@ -337,13 +337,17 @@ export default function KampanyePage() {
             </div>
           </div>
           <div><a href="#profil">Profil</a><a href="#visi">Visi</a><a href="#program">Program</a><a href="#roadmap">Roadmap</a></div>
-          <div>
-            <a href="#aspirasi">Aspirasi</a>
-            <a href="https://youtube.com/@enhapodcast?si=Q9eP-2Ma38egbbGT" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#ff0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-              EnhaPodcast
-            </a>
-            <a href="#top">Kembali ke Atas</a>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <a href="#aspirasi">Aspirasi</a>
+              <a href="#top">Kembali ke Atas</a>
+            </div>
+            <div style={{ marginTop: 'auto' }}>
+              <a href="https://youtube.com/@enhapodcast?si=Q9eP-2Ma38egbbGT" target="_blank" rel="noopener noreferrer" className="btn btn-luxury" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', width: 'max-content', padding: '12px 18px', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.05)', boxShadow: '0 8px 24px rgba(0,0,0,0.2)' }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#ff0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                <span style={{ color: '#fff', fontWeight: '800', letterSpacing: '0.05em' }}>ENHAPODCAST</span>
+              </a>
+            </div>
           </div>
         </div>
         <div className="container footer-bottom">Website ini merupakan media penyampaian gagasan, visi, program, dan aspirasi dalam proses pencalonan Dekan Fakultas Teknik UNSOED periode 2026–2030. Identitas institusi digunakan untuk konteks akademik dan perlu mengikuti ketentuan resmi universitas.</div>
