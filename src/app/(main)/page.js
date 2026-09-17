@@ -183,9 +183,9 @@ export default function KampanyePage() {
                 <div><span>Periode</span><strong>2026–2030</strong></div>
                 <div><span>Fokus</span><strong>Transformasi & Kolaborasi</strong></div>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
                 <a className="text-link" href="#aspirasi">Sampaikan ide untuk FT UNSOED →</a>
-                <a className="text-link" href="https://technopreneurplus.blogspot.com/" target="_blank" rel="noopener noreferrer">Kunjungi ENHA Blog ↗</a>
+                <a className="btn btn-luxury" href="https://technopreneurplus.blogspot.com/" target="_blank" rel="noopener noreferrer">Kunjungi ENHA Blog ↗</a>
               </div>
             </div>
           </div>
@@ -339,7 +339,10 @@ export default function KampanyePage() {
           <div><a href="#profil">Profil</a><a href="#visi">Visi</a><a href="#program">Program</a><a href="#roadmap">Roadmap</a></div>
           <div>
             <a href="#aspirasi">Aspirasi</a>
-            <a href="https://youtube.com/@enhapodcast?si=Q9eP-2Ma38egbbGT" target="_blank" rel="noopener noreferrer">EnhaPodcast (YT)</a>
+            <a href="https://youtube.com/@enhapodcast?si=Q9eP-2Ma38egbbGT" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#ff0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              EnhaPodcast
+            </a>
             <a href="#top">Kembali ke Atas</a>
           </div>
         </div>
