@@ -185,7 +185,7 @@ export default function KampanyePage() {
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
                 <a className="text-link" href="#aspirasi">Sampaikan ide untuk FT UNSOED →</a>
-                <a className="btn btn-luxury" href="https://technopreneurplus.blogspot.com/" target="_blank" rel="noopener noreferrer">Kunjungi ENHA Blog ↗</a>
+                <a className="btn btn-luxury" href="https://technopreneurplus.blogspot.com/" target="_blank" rel="noopener noreferrer">Visit Profil Dr. ENHA ↗</a>
               </div>
             </div>
           </div>
