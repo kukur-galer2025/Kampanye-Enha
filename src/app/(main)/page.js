@@ -183,7 +183,10 @@ export default function KampanyePage() {
                 <div><span>Periode</span><strong>2026–2030</strong></div>
                 <div><span>Fokus</span><strong>Transformasi & Kolaborasi</strong></div>
               </div>
-              <a className="text-link" href="#aspirasi">Sampaikan ide untuk FT UNSOED →</a>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
+                <a className="text-link" href="#aspirasi">Sampaikan ide untuk FT UNSOED →</a>
+                <a className="text-link" href="https://technopreneurplus.blogspot.com/" target="_blank" rel="noopener noreferrer">Kunjungi ENHA Blog ↗</a>
+              </div>
             </div>
           </div>
         </section>
