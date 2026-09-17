@@ -337,7 +337,11 @@ export default function KampanyePage() {
             </div>
           </div>
           <div><a href="#profil">Profil</a><a href="#visi">Visi</a><a href="#program">Program</a><a href="#roadmap">Roadmap</a></div>
-          <div><a href="#aspirasi">Aspirasi</a><a href="#top">Kembali ke Atas</a></div>
+          <div>
+            <a href="#aspirasi">Aspirasi</a>
+            <a href="https://youtube.com/@enhapodcast?si=Q9eP-2Ma38egbbGT" target="_blank" rel="noopener noreferrer">EnhaPodcast (YT)</a>
+            <a href="#top">Kembali ke Atas</a>
+          </div>
         </div>
         <div className="container footer-bottom">Website ini merupakan media penyampaian gagasan, visi, program, dan aspirasi dalam proses pencalonan Dekan Fakultas Teknik UNSOED periode 2026–2030. Identitas institusi digunakan untuk konteks akademik dan perlu mengikuti ketentuan resmi universitas.</div>
       </footer>
