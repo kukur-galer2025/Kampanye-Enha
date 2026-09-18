@@ -191,13 +191,19 @@ export default function KampanyePage() {
           </div>
         </section>
 
-        <section className="section">
-          <div className="container reveal">
-            <div className="section-head" style={{ textAlign: 'center', margin: '0 auto 40px' }}>
-              <span className="eyebrow dark">ENHAPODCAST</span>
-              <h2>Kenali Lebih Dekat</h2>
+        <section className="section section-dark" style={{ background: 'linear-gradient(145deg, #061a33, #020914)' }}>
+          <div className="container profile-grid">
+            <div className="reveal" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <span className="eyebrow" style={{ color: '#f3b61f' }}>ENHAPODCAST</span>
+              <h2 style={{ fontSize: 'clamp(32px, 4vw, 48px)', lineHeight: '1.1', marginBottom: '16px' }}>Kenali Lebih Dekat</h2>
+              <p style={{ color: '#bac8da', fontSize: '18px', lineHeight: '1.6', marginBottom: '24px' }}>Dengarkan langsung visi, strategi, dan perbincangan mendalam mengenai langkah besar menuju Fakultas Teknik UNSOED yang lebih unggul, adaptif, dan kolaboratif.</p>
+              <div>
+                <a className="btn btn-luxury" href="https://youtube.com/@enhapodcast?si=Q9eP-2Ma38egbbGT" target="_blank" rel="noopener noreferrer">
+                  Lihat Semua Episode ↗
+                </a>
+              </div>
             </div>
-            <div className="video-wrapper">
+            <div className="video-wrapper reveal" style={{ borderRadius: '24px', border: '1px solid rgba(243, 182, 31, 0.25)', boxShadow: '0 30px 60px rgba(0,0,0,0.5), 0 0 40px rgba(243, 182, 31, 0.1)' }}>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/Ei3tbig0gxM?si=9Hn08UVd4xFEHKHn" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
           </div>
