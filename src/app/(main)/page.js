@@ -6,19 +6,19 @@ import { useSession } from "next-auth/react";
 
 const defaultData = {
   programs: [
-    ['FT UNSOED Command Center','Dashboard data terintegrasi untuk monitoring akademik, SDM, mahasiswa, penelitian, keuangan, kerja sama, dan KPI.'],
-    ['FT Digital Campus','Transformasi layanan akademik dan administrasi menuju smart faculty yang cepat dan mudah diakses.'],
-    ['Academic Excellence 2030','Penguatan kurikulum OBE, pembelajaran digital, AI-assisted learning, dan kualitas program studi.'],
-    ['Research & Innovation Hub','Ekosistem penelitian, laboratorium, inovasi, HKI, startup, dan hilirisasi.'],
-    ['Professor & Doctor Acceleration','Akselerasi studi doktoral, profesor, publikasi, dan peningkatan kapasitas akademik.'],
-    ['Global Engineering Network','Visiting professor, student exchange, joint research, dan global classroom.'],
-    ['Industry Link & Match','Kolaborasi industri untuk kurikulum, magang, riset, sertifikasi, dan rekrutmen.'],
-    ['Student Excellence Center','Pembinaan prestasi, organisasi, kewirausahaan, karier, dan wellbeing mahasiswa.'],
-    ['Alumni Connect','Jejaring alumni, mentoring, career networking, scholarship, dan kontribusi alumni.'],
-    ['Green & Sustainable Engineering Campus','Lingkungan akademik hijau, sehat, aman, inklusif, dan berkelanjutan.']
+    ['FT UNSOED Command Center', 'Dashboard data terintegrasi untuk monitoring akademik, SDM, mahasiswa, penelitian, keuangan, kerja sama, dan KPI.'],
+    ['FT Digital Campus', 'Transformasi layanan akademik dan administrasi menuju smart faculty yang cepat dan mudah diakses.'],
+    ['Academic Excellence 2030', 'Penguatan kurikulum OBE, pembelajaran digital, AI-assisted learning, dan kualitas program studi.'],
+    ['Research & Innovation Hub', 'Ekosistem penelitian, laboratorium, inovasi, HKI, startup, dan hilirisasi.'],
+    ['Professor & Doctor Acceleration', 'Akselerasi studi doktoral, profesor, publikasi, dan peningkatan kapasitas akademik.'],
+    ['Global Engineering Network', 'Visiting professor, student exchange, joint research, dan global classroom.'],
+    ['Industry Link & Match', 'Kolaborasi industri untuk kurikulum, magang, riset, sertifikasi, dan rekrutmen.'],
+    ['Student Excellence Center', 'Pembinaan prestasi, organisasi, kewirausahaan, karier, dan wellbeing mahasiswa.'],
+    ['Alumni Connect', 'Jejaring alumni, mentoring, career networking, scholarship, dan kontribusi alumni.'],
+    ['Green & Sustainable Engineering Campus', 'Lingkungan akademik hijau, sehat, aman, inklusif, dan berkelanjutan.']
   ],
   kpis: [
-    ['Akreditasi Program Studi','75%'],['Dosen Doktor','68%'],['Research Output','62%'],['Kerja Sama Internasional','55%'],['Prestasi Mahasiswa','72%'],['Graduate Employability','80%'],['Digitalisasi Layanan','70%'],['Kepuasan Layanan','84%']
+    ['Akreditasi Program Studi', '75%'], ['Dosen Doktor', '68%'], ['Research Output', '62%'], ['Kerja Sama Internasional', '55%'], ['Prestasi Mahasiswa', '72%'], ['Graduate Employability', '80%'], ['Digitalisasi Layanan', '70%'], ['Kepuasan Layanan', '84%']
   ]
 };
 
@@ -34,7 +34,7 @@ export default function KampanyePage() {
     if (local) {
       try {
         setData({ ...defaultData, ...JSON.parse(local) });
-      } catch (e) {}
+      } catch (e) { }
     }
 
     const handleScroll = () => setScrolled(window.scrollY > 30);
@@ -43,7 +43,7 @@ export default function KampanyePage() {
     const io = new IntersectionObserver(entries => entries.forEach(e => {
       if (e.isIntersecting) e.target.classList.add('visible');
     }), { threshold: 0.12 });
-    
+
     // Slight delay to allow React to render DOM before observing
     setTimeout(() => {
       document.querySelectorAll('.reveal').forEach(el => io.observe(el));
@@ -58,7 +58,7 @@ export default function KampanyePage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setFormStatus('Mengirim...');
-    
+
     const isAnonymous = e.target.anonymous.checked;
     const name = e.target.name.value;
     const category = e.target.category.value;
@@ -102,7 +102,7 @@ export default function KampanyePage() {
               <Link className="btn btn-sm btn-primary" href="/dashboard">Command Center →</Link>
             ) : (
               <>
-                <Link className="btn btn-sm btn-outline" href="/api/auth/signin" style={{padding: "8px 14px", marginLeft: "10px", borderColor: "rgba(255,255,255,0.4)"}}>Login</Link>
+                <Link className="btn btn-sm btn-outline" href="/api/auth/signin" style={{ padding: "8px 14px", marginLeft: "10px", borderColor: "rgba(255,255,255,0.4)" }}>Login</Link>
                 <a className="btn btn-sm btn-gold" href="#aspirasi">Bersama Membangun FT</a>
               </>
             )}
@@ -199,7 +199,7 @@ export default function KampanyePage() {
               <p style={{ color: '#bac8da', fontSize: '18px', lineHeight: '1.6', marginBottom: '24px' }}>Dengarkan langsung visi, strategi, dan perbincangan mendalam mengenai langkah besar menuju Fakultas Teknik UNSOED yang lebih unggul, adaptif, dan kolaboratif.</p>
               <div>
                 <a className="btn btn-luxury" href="https://youtube.com/@enhapodcast?si=Q9eP-2Ma38egbbGT" target="_blank" rel="noopener noreferrer">
-                  Lihat Semua Episode ↗
+                  Lihat Semua Konten ↗
                 </a>
               </div>
             </div>
@@ -260,7 +260,7 @@ export default function KampanyePage() {
                 <div><small>Service SLA</small><strong>92%</strong></div>
               </div>
               <div className="chart-bars" aria-hidden="true">
-                <i style={{height:'36%'}}></i><i style={{height:'58%'}}></i><i style={{height:'48%'}}></i><i style={{height:'72%'}}></i><i style={{height:'66%'}}></i><i style={{height:'88%'}}></i><i style={{height:'78%'}}></i><i style={{height:'96%'}}></i>
+                <i style={{ height: '36%' }}></i><i style={{ height: '58%' }}></i><i style={{ height: '48%' }}></i><i style={{ height: '72%' }}></i><i style={{ height: '66%' }}></i><i style={{ height: '88%' }}></i><i style={{ height: '78%' }}></i><i style={{ height: '96%' }}></i>
               </div>
               <p className="demo-note">Demo Dashboard — data bersifat ilustratif.</p>
             </div>
@@ -299,7 +299,7 @@ export default function KampanyePage() {
                 <article key={i} className="kpi-card reveal">
                   <span>{k[0]}</span>
                   <strong>{k[1]}</strong>
-                  <div className="progress"><i style={{width: parseInt(k[1]) || 50 + '%'}}></i></div>
+                  <div className="progress"><i style={{ width: parseInt(k[1]) || 50 + '%' }}></i></div>
                   <small>Demo target/progress</small>
                 </article>
               ))}
@@ -362,7 +362,7 @@ export default function KampanyePage() {
             </div>
             <div style={{ marginTop: 'auto' }}>
               <a href="https://youtube.com/@enhapodcast?si=Q9eP-2Ma38egbbGT" target="_blank" rel="noopener noreferrer" className="btn btn-luxury" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', width: 'max-content', padding: '12px 18px', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.05)', boxShadow: '0 8px 24px rgba(0,0,0,0.2)' }}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="#ff0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#ff0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
                 <span style={{ color: '#fff', fontWeight: '800', letterSpacing: '0.05em' }}>ENHAPODCAST</span>
               </a>
             </div>
