@@ -196,7 +196,7 @@ export default function KampanyePage() {
             <div className="reveal" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <span className="eyebrow" style={{ color: '#f3b61f' }}>ENHAPODCAST</span>
               <h2 style={{ fontSize: 'clamp(32px, 4vw, 48px)', lineHeight: '1.1', marginBottom: '16px' }}>Kenali Lebih Dekat</h2>
-              <p style={{ color: '#bac8da', fontSize: '18px', lineHeight: '1.6', marginBottom: '24px' }}>Dengarkan langsung visi, strategi, dan perbincangan mendalam mengenai langkah besar menuju Fakultas Teknik UNSOED yang lebih unggul, adaptif, dan kolaboratif.</p>
+              <p style={{ color: '#bac8da', fontSize: '18px', lineHeight: '1.6', marginBottom: '24px' }}>Dengarkan berbagai perbincangan inspiratif dan mendalam seputar ilmu-ilmu kehidupan, pengembangan diri, serta ragam sudut pandang bijak dalam menyikapi dinamika keseharian.</p>
               <div>
                 <a className="btn btn-luxury" href="https://youtube.com/@enhapodcast?si=Q9eP-2Ma38egbbGT" target="_blank" rel="noopener noreferrer">
                   Lihat Semua Konten ↗
