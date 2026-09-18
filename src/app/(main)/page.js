@@ -330,7 +330,7 @@ export default function KampanyePage() {
       <footer>
         <div className="container footer-grid">
           <div className="footer-brand">
-            <img src="/assets/logo-unsoed.png" alt="Logo UNSOED" />
+            <img src="/assets/enha.png" alt="Logo ENHA" />
             <div>
               <strong>Dr. Ir. Nurul Hidayat, M.Kom</strong>
               <span>Calon Dekan FT UNSOED 2026–2030</span>
