@@ -191,6 +191,18 @@ export default function KampanyePage() {
           </div>
         </section>
 
+        <section className="section">
+          <div className="container reveal">
+            <div className="section-head" style={{ textAlign: 'center', margin: '0 auto 40px' }}>
+              <span className="eyebrow dark">ENHAPODCAST</span>
+              <h2>Kenali Lebih Dekat</h2>
+            </div>
+            <div className="video-wrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Ei3tbig0gxM?si=9Hn08UVd4xFEHKHn" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            </div>
+          </div>
+        </section>
+
         <section id="visi" className="section section-dark vision-section">
           <div className="container">
             <div className="section-head light reveal"><span className="eyebrow">ARAH KEPEMIMPINAN</span><h2>Visi FT UNSOED 2030</h2></div>
